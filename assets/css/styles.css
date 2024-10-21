@@ -437,9 +437,80 @@ svg {
   margin-bottom: .75rem;
 }
 
+.services__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.services__card:hover{
+  border: 2px solid var(--first-color);
+}
+
 /*=============== PROJECTS ===============*/
+.projects{
+  background-color: var(--container-color);
+}
 
+.projects__container{
+  row-gap: 2rem;
+  justify-content: center;
+  padding-block: 1rem;
+}
 
+.projects__card{
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.projects__img{
+  width: 100%;
+  height: 100%
+}
+
+.projects__modal{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, hsla(0, 0%,0%,0)0%,hsla(var(--hue),70%,40%,.8)120%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: bottom .4s;
+}
+
+.projects__subtitle,
+.projects__botton{
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+}
+
+.projects__subtitle{
+  display: block;
+  margin-bottom: .25rem;
+}
+
+.projects__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: .75rem;
+}
+
+.projects__botton{
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  font-weight: var(--font-medium);
+}
+
+.project__botton i{
+  font-size: 1.25rem;
+}
 /*=============== CONTACT ===============*/
 
 
